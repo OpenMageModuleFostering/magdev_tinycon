@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * Copyright (c) 2012 Marco Graetsch
+ *
+ * Permission is hereby granted, free of charge, to any person
+ * obtaining a copy of this software and associated documentation
+ * files (the "Software"), to deal in the Software without restriction,
+ * including without limitation the rights to use, copy, modify, merge,
+ * publish, distribute, sublicense, and/or sell copies of the Software,
+ * and to permit persons to whom the Software is furnished to do so,
+ * subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be
+ * included in all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+ * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+ * OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+ * IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+ * CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+ * TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+ * SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ *
+ *
+ * @package		Magdev_Tinycon
+ * @author		Marco Graetsch <info@magdev.de>
+ * @copyright	2012 Marco Graetsch
+ */
+-->
+<config>
+	<modules>
+        <Magdev_Tinycon>
+            <version>1.0.2</version>
+        </Magdev_Tinycon>
+    </modules>
+	<global>
+		<blocks>
+             <tinycon>
+                <class>Magdev_Tinycon_Block</class>
+             </tinycon>
+        </blocks>
+		<helpers>
+             <tinycon>
+                <class>Magdev_Tinycon_Helper</class>
+             </tinycon>
+        </helpers>
+		<models>
+             <tinycon>
+                <class>Magdev_Tinycon_Model</class>
+             </tinycon>
+        </models>
+	</global>
+	<frontend>
+        <layout>
+            <updates>
+                <tinycon>
+                    <file>tinycon.xml</file>
+                </tinycon>
+            </updates>
+        </layout>
+    </frontend>
+    <adminhtml>
+        <translate>
+            <modules>
+                <Magdev_Tinycon>
+                    <files>
+                        <default>Magdev_Tinycon.csv</default>
+                    </files>
+                </Magdev_Tinycon>
+            </modules>
+        </translate>
+    </adminhtml>
+    <default>
+    	<design>
+    		<tinycon>
+    			<enabled>1</enabled>
+    			<width>7</width>
+    			<height>9</height>
+    			<fontsize>10</fontsize>
+    			<fontface>arial</fontface>
+                <colour>#ffffff</colour>
+                <background>#618499</background>
+                <fallback>1</fallback>
+                <abbreviate>1</abbreviate>
+    		</tinycon>
+    	</design>
+    </default>
+</config>
