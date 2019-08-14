@@ -28,18 +28,28 @@
  */
 
 /**
- * Insert Tinycon javascript
+ * Tinycon javascript block
  *
  * @author magdev
  */
 class Magdev_Tinycon_Block_Script extends Mage_Core_Block_Template
 {
+    /**
+     * Check if the module is enabled
+     *
+     * @return boolean
+     */
     public function isEnabled()
     {
         return Mage::getStoreConfig('design/tinycon/enabled');
     }
     
     
+    /**
+     * Get the width of the bubble
+     *
+     * @return int
+     */
     public function getWidth()
     {
         if (!$this->getData('width')) {
@@ -49,6 +59,11 @@ class Magdev_Tinycon_Block_Script extends Mage_Core_Block_Template
     }
     
     
+    /**
+     * Get the height of the bubble
+     *
+     * @return int
+     */
     public function getHeight()
     {
         if (!$this->getData('height')) {
@@ -58,6 +73,11 @@ class Magdev_Tinycon_Block_Script extends Mage_Core_Block_Template
     }
     
     
+    /**
+     * Get the font-def
+     *
+     * @return string
+     */
     public function getFont()
     {
         if (!$this->getData('font')) {
@@ -66,6 +86,12 @@ class Magdev_Tinycon_Block_Script extends Mage_Core_Block_Template
         return $this->getData('font');
     }
     
+    
+    /**
+     * Get the font-face
+     *
+     * @return string
+     */
     public function getFontface()
     {
         if (!$this->getData('fontface')) {
@@ -75,6 +101,11 @@ class Magdev_Tinycon_Block_Script extends Mage_Core_Block_Template
     }
     
     
+    /**
+     * Get the font-size
+     *
+     * @return int
+     */
     public function getFontsize()
     {
         if (!$this->getData('fontsize')) {
@@ -83,15 +114,26 @@ class Magdev_Tinycon_Block_Script extends Mage_Core_Block_Template
         return $this->getData('fontsize');
     }
     
+    
+    /**
+     * Get the text-color
+     *
+     * @return string
+     */
     public function getColor()
     {
         if (!$this->getData('color')) {
-            $this->setData('color', (string) Mage::getStoreConfig('design/tinycon/colour'));
+            $this->setData('color', (string) Mage::getStoreConfig('design/tinycon/color'));
         }
         return $this->getData('color');
     }
     
     
+    /**
+     * Get the background-color
+     *
+     * @return string
+     */
     public function getBackground()
     {
         if (!$this->getData('background')) {
@@ -101,6 +143,11 @@ class Magdev_Tinycon_Block_Script extends Mage_Core_Block_Template
     }
     
     
+    /**
+     * Get the fallback setting
+     *
+     * @return string|int
+     */
     public function getFallback()
     {
         if (!$this->getData('fallback')) {
@@ -110,6 +157,11 @@ class Magdev_Tinycon_Block_Script extends Mage_Core_Block_Template
     }
     
     
+    /**
+     * Get the abbreviate setting
+     *
+     * @return boolean
+     */
     public function getAbbreviate()
     {
         if (!$this->getData('abbreviate')) {
@@ -119,6 +171,11 @@ class Magdev_Tinycon_Block_Script extends Mage_Core_Block_Template
     }
     
     
+    /**
+     * Get the current bubble-count
+     *
+     * @return int
+     */
     public function getCount()
     {
         if (!$this->getData('count')) {

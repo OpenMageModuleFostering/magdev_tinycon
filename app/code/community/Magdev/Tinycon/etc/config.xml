@@ -31,7 +31,7 @@
 <config>
 	<modules>
         <Magdev_Tinycon>
-            <version>1.0.3</version>
+            <version>1.0.4</version>
         </Magdev_Tinycon>
     </modules>
 	<global>
@@ -79,10 +79,10 @@
     			<height>9</height>
     			<fontsize>10</fontsize>
     			<fontface>arial</fontface>
-                <colour>#ffffff</colour>
+                <color>#ffffff</color>
                 <background>#618499</background>
                 <fallback>1</fallback>
-                <abbreviate>1</abbreviate>
+                <abbreviate>0</abbreviate>
     		</tinycon>
     	</design>
     </default>

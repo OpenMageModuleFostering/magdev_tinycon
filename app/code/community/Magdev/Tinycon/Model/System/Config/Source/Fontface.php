@@ -29,7 +29,7 @@
 
 
 /**
- * Fontface model
+ * Fontface Source-Model
  *
  * @author magdev
  */
@@ -38,8 +38,11 @@ class Magdev_Tinycon_Model_System_Config_Source_Fontface
     public function toOptionArray()
     {
         return array(
-            array('label' => Mage::helper('tinycon')->__('Arial'), 'value' => 'arial'),
-            array('label' => Mage::helper('tinycon')->__('Verdana'), 'value' => 'verdana'),
+            array('label' => Mage::helper('tinycon')->__('Arial'), 'value' => 'Arial'),
+            array('label' => Mage::helper('tinycon')->__('Verdana'), 'value' => 'Verdana'),
+            array('label' => Mage::helper('tinycon')->__('Georgia'), 'value' => 'Georgia'),
+            array('label' => Mage::helper('tinycon')->__('Helvetica'), 'value' => 'Helvetica'),
+            array('label' => Mage::helper('tinycon')->__('Times New Roman'), 'value' => '"Times New Roman"'),
         );
     }
 }

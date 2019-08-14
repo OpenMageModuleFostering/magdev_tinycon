@@ -31,11 +31,16 @@
 <layout version="0.1.0">
 	<default>
 		<reference name="head">
-			<action method="addJs" ifconfig="design/tinycon/enabled"><script>tinycon/tinycon.min.js</script></action>
+			<action method="addJs" ifconfig="design/tinycon/enabled">
+                <script>tinycon/tinycon.min.js</script>
+            </action>
 		</reference>
 		<reference name="before_body_end">
-			<block type="tinycon/Script" name="tinycon_script" template="tinycon/js.phtml"/>
-			<action method="setChild"><block>tinycon_script</block><name>tinycon_script</name></action>
+			<block type="tinycon/script" name="tinycon_script" template="tinycon/script.phtml"/>
+            <action method="setChild" ifconfig="design/tinycon/enabled">
+                <block>tinycon_script</block>
+                <name>tinycon_script</name>
+            </action>
 		</reference>
 	</default>
 </layout>
