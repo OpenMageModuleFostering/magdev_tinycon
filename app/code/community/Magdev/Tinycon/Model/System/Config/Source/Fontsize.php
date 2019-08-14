@@ -38,9 +38,11 @@ class Magdev_Tinycon_Model_System_Config_Source_Fontsize
     public function toOptionArray()
     {
         return array(
+            array('label' => Mage::helper('tinycon')->__('8px'), 'value' => 8),
             array('label' => Mage::helper('tinycon')->__('9px'), 'value' => 9),
             array('label' => Mage::helper('tinycon')->__('10px'), 'value' => 10),
             array('label' => Mage::helper('tinycon')->__('11px'), 'value' => 11),
+            array('label' => Mage::helper('tinycon')->__('12px'), 'value' => 12),
         );
     }
 }

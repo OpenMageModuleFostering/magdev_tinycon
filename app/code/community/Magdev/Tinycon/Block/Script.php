@@ -104,7 +104,7 @@ class Magdev_Tinycon_Block_Script extends Mage_Core_Block_Template
     public function getFallback()
     {
         if (!$this->getData('fallback')) {
-            $this->setData('fallback', Mage::getStoreConfigFlag('design/tinycon/fallback'));
+            $this->setData('fallback', Mage::getStoreConfig('design/tinycon/fallback'));
         }
         return $this->getData('fallback');
     }

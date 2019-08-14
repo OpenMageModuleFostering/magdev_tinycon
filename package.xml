@@ -1,18 +1,18 @@
 <?xml version="1.0"?>
 <package>
     <name>Magdev_Tinycon</name>
-    <version>1.0.2</version>
+    <version>1.0.3</version>
     <stability>stable</stability>
     <license uri="http://www.opensource.org/licenses/mit-license.php">MIT License</license>
     <channel>community</channel>
     <extends/>
     <summary>Display the number of items in cart as favicon bubble</summary>
     <description>Display the number of items in cart as favicon bubble using the Tinycon javascript library</description>
-    <notes>js-fix</notes>
+    <notes>added force-fallback option</notes>
     <authors><author><name>Marco Graetsch</name><user>magdev</user><email>info@magdev.de</email></author></authors>
     <date>2013-04-01</date>
-    <time>19:20:23</time>
-    <contents><target name="magecommunity"><dir name="Magdev"><dir name="Tinycon"><dir name="Block"><file name="Script.php" hash="bbade88907060cf03d5d15e2abc5772a"/></dir><dir name="Helper"><file name="Data.php" hash="759c93792721a1562813bf6286ae37c7"/></dir><dir name="Model"><dir name="System"><dir name="Config"><dir name="Source"><file name="Fontface.php" hash="e592653dfafd3ea63c7b8fa6ae211fb8"/><file name="Fontsize.php" hash="093fb8cb0d3c53aa31ab16547f981888"/></dir></dir></dir></dir><dir name="etc"><file name="adminhtml.xml" hash="d2a463dcf40271877a8254b45afaa819"/><file name="config.xml" hash="9edc732112b04bf6c44db0a017b1d0c1"/><file name="system.xml" hash="111e90e3d68b55584668d71dbbbc8d5b"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Magdev_Tinycon.xml" hash="fb42db35e3e733c26b10a91e217deebe"/></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><file name="tinycon.xml" hash="b56e38afc714b192f8ec0c246fe11711"/></dir><dir name="template"><dir name="tinycon"><file name="js.phtml" hash="abb33e1363b6ecb85f4e5d22c3e9ba6f"/></dir></dir></dir></dir></dir></target><target name="mage"><dir name="js"><dir name="tinycon"><file name="tinycon.js" hash="f61e4e95050172b30344b5f2fd51ce2a"/><file name="tinycon.min.js" hash="f9e48e5d4590630acf74b4f0b63e502f"/></dir></dir></target><target name="magelocale"><dir name="de_DE"><file name="Magdev_Tinycon.csv" hash="428a9c0480ba1ff9b9a00f4d530150d8"/></dir></target></contents>
+    <time>19:37:16</time>
+    <contents><target name="magecommunity"><dir name="Magdev"><dir name="Tinycon"><dir name="Block"><file name="Script.php" hash="055a71c4788752f5e5adbf66338e3712"/></dir><dir name="etc"><file name="adminhtml.xml" hash="d2a463dcf40271877a8254b45afaa819"/><file name="config.xml" hash="6481167acb0896b80300ae244c80d0a8"/><file name="system.xml" hash="7dc4624e10de86f9babc2a01c8cb8fb6"/></dir><dir name="Helper"><file name="Data.php" hash="759c93792721a1562813bf6286ae37c7"/></dir><dir name="Model"><dir name="System"><dir name="Config"><dir name="Source"><file name="Fallback.php" hash="d8788b451ffd3f5d1c461116c141e8cd"/><file name="Fontface.php" hash="e592653dfafd3ea63c7b8fa6ae211fb8"/><file name="Fontsize.php" hash="dff5ddd5fc82f9e8e19f7d44f3bd996b"/></dir></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Magdev_Tinycon.xml" hash="fb42db35e3e733c26b10a91e217deebe"/></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><file name="tinycon.xml" hash="b56e38afc714b192f8ec0c246fe11711"/></dir><dir name="template"><dir name="tinycon"><file name="js.phtml" hash="06b9be966e38f93d1ca9076d60931071"/></dir></dir></dir></dir></dir></target><target name="mage"><dir name="js"><dir name="tinycon"><file name="tinycon.js" hash="f61e4e95050172b30344b5f2fd51ce2a"/><file name="tinycon.min.js" hash="f9e48e5d4590630acf74b4f0b63e502f"/></dir></dir></target><target name="magelocale"><dir name="de_DE"><file name="Magdev_Tinycon.csv" hash="428a9c0480ba1ff9b9a00f4d530150d8"/></dir></target></contents>
     <compatible/>
     <dependencies><required><php><min>5.2.6</min><max>6.0.0</max></php></required></dependencies>
 </package>

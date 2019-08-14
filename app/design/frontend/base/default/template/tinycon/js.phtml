@@ -26,20 +26,29 @@
  * @author		Marco Graetsch <info@magdev.de>
  * @copyright	2012 Marco Graetsch
  */
+
+$_fallback = $this->getFallback();
+if ($_fallback) {
+    if ($_fallback != '"force"') {
+        $_fallback = 'true';
+    }
+} else {
+    $_fallback = 'false';
+}
 ?>
 <?php if ($this->isEnabled()) { ?>
-<script type="text/javascript">
-$(document).observe('dom:loaded', function() {
-    Tinycon.setOptions({
-        width: <?php echo $this->getWidth() ?>,
-        height: <?php echo $this->getHeight() ?>,
-        font: '<?php echo $this->getFont() ?>',
-        colour: '<?php echo $this->getColor() ?>',
-        background: '<?php echo $this->getBackground() ?>',
-        fallback: <?php echo $this->getFallback() ? 'true' : 'false' ?>,
-        abbreviate: <?php echo $this->getAbbreviate() ? 'true' : 'false' ?>
+    <script type="text/javascript">
+    $(document).observe('dom:loaded', function() {
+        Tinycon.setOptions({
+            width: <?php echo $this->getWidth() ?>,
+            height: <?php echo $this->getHeight() ?>,
+            font: '<?php echo $this->getFont() ?>',
+            colour: '<?php echo $this->getColor() ?>',
+            background: '<?php echo $this->getBackground() ?>',
+            fallback: <?php echo $_fallback ?>,
+            abbreviate: <?php echo $this->getAbbreviate() ? 'true' : 'false' ?>
+        });
+        Tinycon.setBubble(<?php echo $this->getCount() ?>);
     });
-    Tinycon.setBubble(<?php echo $this->getCount() ?>);
-});
-</script>
+    </script>
 <?php } ?>

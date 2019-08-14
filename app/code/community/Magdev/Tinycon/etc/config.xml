@@ -31,7 +31,7 @@
 <config>
 	<modules>
         <Magdev_Tinycon>
-            <version>1.0.2</version>
+            <version>1.0.3</version>
         </Magdev_Tinycon>
     </modules>
 	<global>
