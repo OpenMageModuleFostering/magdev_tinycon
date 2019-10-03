@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/Magdev_Tinycon",
+    "name": "OpenMageModuleFostering\/Magdev_Tinycon",
     "type": "magento-module",
     "license": "MIT-License",
     "homepage": "",
     "description": "Display the number of items in cart as favicon bubble",
     "authors": [
-    {
-        "name": "Marco Graetsch",
-        "email": "info@magdev.de"
-    }
-],
+        {
+            "name": "Marco Graetsch",
+            "email": "info@magdev.de"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
